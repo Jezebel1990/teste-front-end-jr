@@ -4,6 +4,9 @@ $white: #FFF;
 $borderColor: rgba(240, 240, 240, 1);
 $inputColor: rgba(246, 245, 242, 1);
 $black: rgba(42, 42, 42, 1);
+$background-search: #F6F5F2;
+$box-shadow: #3930131f;
+
 
 :export {
     gray: $gray;
@@ -12,6 +15,7 @@ $black: rgba(42, 42, 42, 1);
     primaryColor: $primaryColor;
     borderColor: $borderColor;
     inputColor: $inputColor;
+    
 }
 
 header {
@@ -20,7 +24,21 @@ header {
 }
 
 body {
-    background-color: #FFF;
+    background-color: $white;
     font-family: "Poppins";
     height: 1500px;
 }
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
