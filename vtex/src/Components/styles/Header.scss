@@ -1,0 +1,32 @@
+@import './variables.scss';
+
+.container-header-top {
+    display: flex;
+    padding: 7px 254px 7px 262px;
+    border-bottom: 1px solid $borderColor;
+    margin: -10px;
+    max-width: 1280px;
+    justify-content: space-between;
+
+    .container-center {
+        display: flex;
+        align-items: center;
+
+     .container-header {
+        display: inline-flex;
+        margin-right: 9px;
+     }
+
+     .header-text {
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 18px;
+        color: $gray;
+
+        .span {
+          color: $primaryColor;
+          font-weight: 600;
+        }
+     }
+      }
+    }
