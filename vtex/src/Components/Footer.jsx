@@ -135,6 +135,26 @@ const Footer = () => {
 </div>
 </div>
 </div>
+
+
+{/* Coluna de Newsletter */}
+<div className="column">
+<div className="newsletter">
+<h1 className="title-one">Cadastre-se e receba nossas</h1>
+<h1 className="title-two">Novidades e promoções</h1>
+<p className="newsletter-subtitle">Excepteur sint occaecat cudatat non ent, sunt in culpa qui officia lorem ipsum
+</p>
+
+<form className="newsletter-form">
+<input type="text" id="email" placeholder="Seu e-mail" required/>
+<button type="submit">
+    <a href="#ok">OK</a>
+</button>
+</form>
+</div>
+</div>
+
+
 </footer>
   )
 }

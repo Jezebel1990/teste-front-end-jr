@@ -80,7 +80,7 @@
     .payment-row {
         display: flex;
         justify-content: flex-start;
-        width: calc(63.33% - 50px); /* 3 ícones por linha com 10px de espaço entre eles */
+        width: calc(63.33% - 50px); /* 3 ícones por linha com espaço entre eles */
         margin-bottom: 10px;
     
         a {
@@ -93,3 +93,78 @@
       }
   
 }
+
+.newsletter {
+    margin: 59px 0 32px -59px;
+    align-items: center;
+    max-width: 380px;
+    padding: 40px 34px 40px 29px;
+    background-color: $white;
+    border-radius: 10px;
+    height: 260px;
+}
+.title-one {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 26px;
+    text-transform: uppercase;
+    color: $blackText;
+}
+
+.title-two {
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 26px;
+    text-transform: uppercase;
+    color: $blackText;
+}
+
+.newsletter-subtitle {
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 19px;
+    text-align: center;
+    margin: 15px 0 31px 0;
+    color: $blackText
+}
+
+
+.newsletter-form {
+    display: flex;
+
+  input {
+    border: 1px solid $black;
+    outline: none;
+    padding: 13px 0 12px 25px;
+    border-radius: 4px;
+    margin-left: 11px;
+    width: 230px;
+
+    &::placeholder {
+        text-transform: uppercase;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 20px;
+        font-family: "Poppins";
+      }
+    }
+
+    button {
+        padding: 12px 20px 13px 21px;
+        border: none;
+        background-color: $primaryColor;
+        border-radius: 4px;
+        margin-left: 9px;
+        text-transform: uppercase;
+
+        a {
+            color: $white;
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 20px;
+            font-family: "Poppins";
+        }
+
+    }
+
+  }
