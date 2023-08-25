@@ -1,0 +1,61 @@
+@import './variables.scss';
+@import './font.scss';
+
+.about {
+
+    margin: 59px 0 0 120px;
+    p {
+        font-size: 13px;
+        font-weight: 700;
+        line-height: 20px;
+        color: $white;
+        margin-bottom: 24px;
+      }
+  
+      li a {
+          color: $white;
+          font-size: 12px;
+          font-weight: 300;
+          line-height: 32px;
+          text-transform: uppercase;
+      }
+    }
+  
+
+
+.social-media {
+    display: flex;
+    justify-content: space-between;
+    max-width: 124px;
+    margin-top: 60px;
+  }
+
+
+
+  .information {
+    text-transform: uppercase;
+    margin-top: 59px;
+    p {
+      font-size: 13px;
+      font-weight: 700;
+      line-height: 20px;
+      color: $white;
+      margin-bottom: 24px;
+    }
+
+    li a {
+        color: $white;
+        font-size: 12px;
+        font-weight: 300;
+        line-height: 32px;
+        text-transform: uppercase;
+    }
+  }
+
+.column {
+   flex: 1;
+   margin-right: 20px;
+}
+
+
+
