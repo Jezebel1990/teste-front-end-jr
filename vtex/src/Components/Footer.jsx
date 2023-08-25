@@ -4,6 +4,16 @@ import "./styles/Footer.scss";
 import Facebook from "/assets/Facebook.svg";
 import Instagram from "/assets/Instagram.svg";
 import Youtube from "/assets/Youtube.svg";
+import Visa from "/assets/Visa.svg";
+import Elo from "/assets/Elo.svg";
+import Alelo from "/assets/Alelo.svg";
+import Dinners from "/assets/Dinners.svg";
+import Ifood from  "/assets/Ifood.svg";
+import Mastercard from "/assets/Mastercard.svg";
+import Pix from "/assets/Pix.svg";
+import Amex from "/assets/Amex.svg";
+import Ticket from "/assets/Ticket.svg";
+import Sodexo from "/assets/Sodexo.svg";
 
 
 const Footer = () => {
@@ -47,7 +57,7 @@ const Footer = () => {
 </div>
 </div>
 
-
+{/* Coluna Informações Úteis */}
 <div className="column">  
 <div className="information">
    <p>Informações Úteis</p> 
@@ -71,6 +81,58 @@ const Footer = () => {
           <a href="#-trocas-e-devolucoes">Trocas e devoluções</a>
         </li>
       </ul>
+</div>
+</div>
+
+
+{/* Coluna Formas de Pagamento */}
+<div className="column">
+    <div className="payments">
+    <p>Formas de pagamneto</p>
+    <div className="payment-methods">
+        <div className="payment-row">
+    <a href="#visa">
+    <img src={Visa} alt="Visa" />
+    </a>
+  <a href="#elo">
+     <img src={Elo} alt="Elo" />
+          </a>
+    <a href="#alelo">
+    <img src={Alelo} alt="Alelo" />
+    </a>
+</div>
+<div className="payment-row">
+    <a href="#dinners">
+    <img src={Dinners} alt="Dinners" />
+    </a>
+
+    <a href="#ifood">
+    <img src={Ifood} alt="Ifood" />
+    </a>
+
+    <a href="#mastercard">
+    <img src={Mastercard} alt="Mastercard" />
+    </a>
+</div>
+<div className="payment-row">
+    <a href="#pix">
+    <img src={Pix} alt="Pix" />
+    </a>
+
+    <a href="#amex">
+    <img src={Amex} alt="American Express" />
+    </a>
+
+    <a href="#ticket">
+    <img src={Ticket} alt="Ticket" />
+    </a>
+</div>
+<div className="payment-row">
+    <a href="#sodexo">
+    <img src={Sodexo} alt="Sodexo" />
+    </a>
+</div>
+</div>
 </div>
 </div>
 </footer>
