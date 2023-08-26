@@ -153,8 +153,6 @@ const Footer = () => {
 </form>
 </div>
 </div>
-
-
 </footer>
   )
 }
