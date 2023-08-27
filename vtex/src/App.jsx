@@ -1,9 +1,9 @@
 
-import { BrowserRouter , Routes, Route } from "react-router-dom";
+import { BrowserRouter} from "react-router-dom";
 import Header from "./Components/Header";
-import Home from "./Components/Home";
 import Carousel from "./Components/Carousel";
 import Footer from "./Components/Footer";
+import Main from "./Components/Main";
 import CopyrightFooter from "./Components/CopyrightFooter";
 
 function App() {
@@ -13,9 +13,7 @@ function App() {
   <BrowserRouter>
   <Header />
   <Carousel />
- <Routes>
-    <Route path="/" element={<Home />}/>
-  </Routes>
+  <Main />
   <Footer />
   <CopyrightFooter/>
   </BrowserRouter>
