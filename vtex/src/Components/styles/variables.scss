@@ -1,6 +1,7 @@
 $primaryColor: rgba(247,25,99,1);
-$gray: rgba(159, 159, 159,1);
+$gray: rgb(159, 159, 159);
 $white: #FFF;
+$whiteOne: #dedede;
 $borderColor: rgba(240, 240, 240, 1);
 $inputColor: rgba(246, 245, 242, 1);
 $black: rgba(42, 42, 42, 1);
@@ -9,6 +10,7 @@ $box-shadow: #3930131f;
 $blackText: #3F3F40;
 $text : #4E4E4E;
 $ice: #F4F4F4;
+$grayOne: #BDBDBD;
 
 :export {
     gray: $gray;

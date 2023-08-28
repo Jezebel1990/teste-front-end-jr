@@ -1,0 +1,26 @@
+@import "./src/Components/styles/font.scss";
+@import "./src/Components/styles/variables.scss";
+
+.title-one {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1138px;
+    margin: 0 auto;
+
+
+    h2 {
+    color: $primaryColor;
+    margin: 0 34px;
+    line-height: 45px;
+    font-weight: bold;
+    text-transform: capitalize;
+    font-size: 30px;
+    }
+
+    .related {
+    width: 31%;
+    color: $black;
+    border-top: 1px solid $whiteOne;
+    }
+}
