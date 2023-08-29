@@ -9,16 +9,17 @@
   align-items: center;
   justify-content: space-between;
   padding: 34px 0 39px 0;
-  max-width: 1280px;
-  margin: 0 0 0 120px;
+  margin-left: 160px;
+  margin-left: 120px;
 
   .category {
-    margin-right: 110px;
+    margin-right: -150px;
+    
 }
 
 
-
  .category-box {
+   display: flex;
    padding: 34px;
    box-shadow: 0px 4px 11px 0px rgba(0, 0, 0, 0.13);
    cursor: pointer;

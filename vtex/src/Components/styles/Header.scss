@@ -1,12 +1,17 @@
 @import './variables.scss';
 @import './font.scss';
 
+/* Header-top */
+
 .container-header-top {
     display: flex;
     padding: 7px 154px 7px 160px;
+    margin: -20px 0 0 0;
+    margin-right: -160px;
+    margin-left: -160px;
     border-bottom: 1px solid $borderColor;
-    max-width: 1280px;
     justify-content: space-between;
+    
 
     .container-center {
         display: flex;
@@ -31,11 +36,16 @@
       }
     }
 
+
+/* Navbar */
 .navbar {
   display: flex;
   justify-content: space-between;
   padding: 10px 22px 5px 0;
   border-bottom: 1px solid $borderColor;
+  margin-right: -120px;
+  margin-left: -60px;
+
 }
 
 .logo img {
@@ -74,17 +84,22 @@ form {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
 }
+
+/* Nav-categories */
 .nav-categories{
-    max-width: 1280px;
-    margin: 0 23px 0 -160px;
+    height: 40px;
     padding: 11px 83px 11px 56px;
     box-shadow: 0px 8px 16px 0px $box-shadow;
+    margin-right: -160px;
+    margin-left: -160px;
 
   ul {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    width: 1280px;
 
     li {
         display: flex;
