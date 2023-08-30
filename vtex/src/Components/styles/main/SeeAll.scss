@@ -1,0 +1,23 @@
+@import "./src/Components/styles/font.scss";
+@import "./src/Components/styles/variables.scss";
+
+.see-all {
+    text-align: center;
+    margin: 4px 0 32px 0;
+    cursor: pointer;
+
+
+    span {
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 23px;
+    color: $blackText;
+    
+    p {
+
+     margin-bottom: 40px;
+    }
+    
+
+ }
+}
