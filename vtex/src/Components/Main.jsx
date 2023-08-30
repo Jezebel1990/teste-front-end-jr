@@ -5,6 +5,7 @@ import MenuProducts from './Main/MenuProducts';
 import MobileCard from './Main/MobileCard';
 import PartnersCard from './Main/PartnersCard';
 import SeeAll from './Main/SeeAll';
+import Products from './Main/Products';
 
 const Main = () => {
   return (
@@ -16,6 +17,7 @@ const Main = () => {
    <PartnersCard />
    <RelatedProducts />
    <SeeAll />
+   <Products />
     </main>
   );
 }

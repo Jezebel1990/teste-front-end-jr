@@ -1,0 +1,68 @@
+@import "./src/Components/styles/font.scss";
+@import "./src/Components/styles/variables.scss";
+
+.products-section {
+    display: flex;
+    justify-content: space-between;
+    margin: 71px auto 0 auto;
+
+    .products-bottom {
+    border-radius: 10px;
+    background-image: url("/assets/Card.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: 150px;
+    margin-left: 150px;
+
+    .products {
+        display: flex;
+        justify-content: space-between;
+        width: 574px;
+        height: 284px;
+        padding: 48px 0 39px 39px;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, $blackZero 110%);
+        border-radius: 20px;   
+
+        .products-inf {
+            h1 {
+                font-size: 40px;
+                font-weight: 700;
+                line-height: 60px; 
+                color: $white;
+            }
+
+
+          p {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            color: $white;
+            max-width: 20ch;
+            font-family: "Poppins";
+            margin-bottom: 32px;
+          }
+
+          button {
+            padding: 12px 24px;
+            border: none;
+            border-radius: 10px;
+            background-color: $primaryColor;
+            max-width: 131px;
+            cursor: pointer;
+
+            a {
+            font-size: 16px;
+            font-weight: 900;
+            line-height: 24px;
+            letter-spacing: 0.08em; 
+            color: $white;
+            font-family: "Poppins";
+            }
+          }
+        }
+    }
+
+    }
+
+    
+}
