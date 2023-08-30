@@ -3,7 +3,8 @@ import "/src/Components/styles/main/MobileCard.scss";
 import Close from "/assets/Close.svg";
 import Plus from "/assets/Plus.svg";
 import Minus from "/assets/Minus.svg";
-
+import Arrow from "/assets/Arrow.svg";
+import ArrowR from "/assets/ArrowR.svg";
 
 
 function formatPrice(price) {
@@ -61,15 +62,11 @@ function Items({
   <img src={Plus} alt="Plus" />
   </span>
 </section>
-
 <button className="quantity-button">
 <a href="#buy">Comprar</a>
 </button>
-
    </div>
     </div>
-
-
   </section>
   );
 }
@@ -79,7 +76,8 @@ function MobileCard() {
   const [items, setItems] = useState([]);
   const [visible, setVisible] = useState(false);
   const [selectedItem, setSelectedItem] = useState(null);
-  const [itemsToShow, setItemsToShow] = useState(4); 
+  const [startIndex, setStartIndex] = useState(0); 
+  const itemsPerPage = 4;
 
 
 useEffect(() => {
@@ -102,43 +100,37 @@ useEffect(() => {
 }, []);
 
 
-const showMoreItems = () => {
-  // Aumentar o número de itens para exibir
-  setItemsToShow(itemsToShow + 4);
-};
-
-const showLessItems = () => {
-  // Diminuir o número de itens para exibir, mínimo de 4
-  if (itemsToShow > 4) {
-    setItemsToShow(itemsToShow - 4);
-  }
-};
-
-
 function visibleIs(item) {
-    setSelectedItem(item);
-    setVisible(true);
+  setSelectedItem(item);
+  setVisible(true);
 }
 
 function visibleNo() {
-    setVisible(false);
+  setVisible(false);
 }
+
+const showNextItems = () => {
+  // Aumentar o número de itens para exibir
+  const nextStartIndex = (startIndex + itemsPerPage) % items.length;
+  setStartIndex(nextStartIndex);
+};
+
+const showPreviousItems = () => {
+  const previousStartIndex = (startIndex - itemsPerPage + items.length) % items.length;
+  setStartIndex(previousStartIndex);
+};
     
-
-  return (
+return (
     <>
-<button
- className="show-more-button"
- onClick={showMoreItems}>
-</button>
 
-<button
-      className="show-less-button"
-      onClick={showLessItems}>
-    </button>
 
-    <section className="cards">
-    {items.slice(0, itemsToShow).map((item, index) => (
+  <section className="cards">
+  <span
+ className="show-more-button" onClick={showNextItems}>
+  <img src={Arrow} alt="Left" />
+</span>
+
+    {items.slice(startIndex, startIndex + itemsPerPage).map((item, index) => (
       <div key={index} className="card" onClick={() => visibleIs(item)}>
         <figure>
             <img 
@@ -150,8 +142,6 @@ function visibleNo() {
           {item.productName}
        </figcaption>
         </figure>
-
-      
 
 <div className="card-one">
     <div className="card-price">
@@ -171,8 +161,12 @@ function visibleNo() {
     </div>
         </div>
     ))}
+    <span className="show-less-button" onClick={showPreviousItems}>
+    <img src={ArrowR} alt="Right" />
+    </span>
     </section>
 
+    
     <Items
      isVisible={visible}
      noVisible={visibleNo}
