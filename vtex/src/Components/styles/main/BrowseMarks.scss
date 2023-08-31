@@ -1,0 +1,87 @@
+
+@import "./src/Components/styles/font.scss";
+@import "./src/Components/styles/variables.scss";
+
+.browse-marks {
+    margin: 155px 0 60px 0;
+
+    .browse {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 45px;
+    text-align: center;
+    color: $primaryColor;
+    margin-bottom: 60px;
+
+ }
+}
+
+.marks {
+   display: flex;
+   justify-content: space-between;
+   margin: 0 auto 104px auto;
+   margin-left: 150px;
+   margin-right: 150px;
+
+}
+
+.mark {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   box-shadow: 0px 7px 20px 0px #00000021;
+   border-radius: 50%;
+   width: 211px;
+   height: 211px;
+   cursor: pointer;
+
+   img {
+      height: 62px;
+      width: 172px;
+   }
+}
+
+.mark-end {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   box-shadow: 0px 7px 20px 0px #00000021;
+   border-radius: 50%;
+   width: 211px;
+   height: 211px;
+   position: relative;
+   cursor: pointer;
+
+   img {
+      height: 62px;
+      width: 172px;
+   }
+}
+
+
+
+
+.Arrow {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   box-shadow: 2px 7px 7px 2px #00000021;
+   border-radius: 50%;
+   height: 56px;
+   width: 56px;
+   background-color: $white;
+   cursor: pointer;
+
+   img {
+      height: 23px;
+      width: 14px;
+      
+   }
+}
+
+.ArrowBlue {
+   position: absolute;
+   top: 50%;
+   left: 80%;
+   transform: translate(-50%, -50%);
+}

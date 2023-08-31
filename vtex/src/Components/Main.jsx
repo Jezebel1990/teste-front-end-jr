@@ -6,6 +6,8 @@ import MobileCard from './Main/MobileCard';
 import PartnersCard from './Main/PartnersCard';
 import SeeAll from './Main/SeeAll';
 import Products from './Main/Products';
+import BrowseMarks from './Main/BrowseMarks';
+
 
 const Main = () => {
   return (
@@ -18,6 +20,7 @@ const Main = () => {
    <RelatedProducts />
    <SeeAll />
    <Products />
+   <BrowseMarks/>
     </main>
   );
 }
