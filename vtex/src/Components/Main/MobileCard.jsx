@@ -110,15 +110,28 @@ function visibleNo() {
 }
 
 const showNextItems = () => {
-  // Aumentar o número de itens para exibir
-  const nextStartIndex = (startIndex + itemsPerPage) % items.length;
-  setStartIndex(nextStartIndex);
+  // Mostra número de itens 
+  const nextStartIndex = startIndex + itemsPerPage;
+
+  if (nextStartIndex >= items.length) {
+    setStartIndex(0);
+  } else {
+    setStartIndex(nextStartIndex);
+  }
 };
 
+
+
 const showPreviousItems = () => {
-  const previousStartIndex = (startIndex - itemsPerPage + items.length) % items.length;
-  setStartIndex(previousStartIndex);
+  const previousStartIndex = startIndex - itemsPerPage; 
+  
+  if (previousStartIndex < 0) {
+    setStartIndex(items.length - itemsPerPage);
+  } else {
+    setStartIndex(previousStartIndex);
+  }
 };
+  
     
 return (
     <>
