@@ -5,23 +5,25 @@
     display: flex;
     justify-content: space-between;
     margin: 71px auto 0 auto;
+    margin-right: 160px;
+   
 
     .products-bottom {
     border-radius: 10px;
     background-image: url("/assets/Card.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    margin-right: 150px;
-    margin-left: 150px;
+    margin-left: 160px;
 
     .products {
         display: flex;
         justify-content: space-between;
-        width: 574px;
+        width: 674px;
         height: 284px;
         padding: 48px 0 39px 39px;
         background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, $blackZero 110%);
         border-radius: 20px;   
+
 
         .products-inf {
             h1 {
